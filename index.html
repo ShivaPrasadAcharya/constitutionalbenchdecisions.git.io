@@ -234,6 +234,7 @@ text-align:center
     ];
     var filteredValuesArray = []; // Array to store filtered data
   </script>
+  
   <a id="TOP"></a>
   <h1> Supreme Court Decision Drafting</h1>
 
@@ -259,6 +260,38 @@ text-align:center
   </div>
 </div>
   </div>
+<script>
+  // Scrolling specific buttons to scroll to their content
+    var showABCButton = document.getElementById('showABCButton')
+    var showAllJKLButton = document.getElementById('showAllJKLButton');
+    var showLMNButton = document.getElementById('showLMNButton');
+    var filterRawDataButton = document.getElementById('filterRawDataButton');
+    var showXYZButton = document.getElementById('showXYZButton');
+    
+    showABCButton.addEventListener('click',function(){
+    var abcContent = document.getElementById('abcOutput');
+    abcContent.scrollIntoView({behavior:'smooth'});
+  });
+    showAllJKLButton.addEventListener('click', function() {
+      var jklContent = document.getElementById('jklContainer'); // Replace with the actual ID of the JKL content
+      jklContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    showLMNButton.addEventListener('click', function() {
+      var lmnContent = document.getElementById('lmnContent'); // Replace with the actual ID of the LMN content
+      lmnContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    filterRawDataButton.addEventListener('click', function() {
+      var rawDataContent = document.getElementById('filteredRawDataContainer'); // Replace with the actual ID of the Raw Data content
+      rawDataContent.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+    showXYZButton.addEventListener('click', function() {
+      var xyzContent = document.getElementById('xyzContainer'); // Replace with the actual ID of the XYZ content
+      xyzContent.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 <label for="input0">Parking1:</label>
 <textarea id="input0" placeholder="Enter text for Input 0:heading"></textarea><br>
 <label for="input1">Input 1:</label>
